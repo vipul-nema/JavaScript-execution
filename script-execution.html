@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>cript execution</title>
+	</head>
+	<!-- use for defer - for IEand firefox browsers it not works on chrome and other platforms. -->
+	<body>
+		<script defer>
+			alert("defer");
+		</script>
+
+		<script>
+			alert("script");
+		</script>
+
+		<script>
+			window.onload = function(){
+				alert("load");
+			};
+		</script>
+	</body>
+</html>
