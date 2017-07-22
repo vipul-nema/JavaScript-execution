@@ -13,3 +13,6 @@ String.prototype.mySplite = function mySplite (seperator) {
 	arr.push(str);
 	return arr;
 }
+
+
+// test
