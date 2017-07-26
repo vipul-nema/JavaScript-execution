@@ -2,35 +2,42 @@
     <head>
         <style>
             .container {
-                   width: 80%;
-                    height: 200px;
-                    border: 2px solid black;
-                    /* margin: auto; */
-                    background-color: yellow;
-                    margin: 10px;
-            }
+                width: 80%;
+                height: 300px;
+                border: 1px solid black;
+                margin: auto;
+                background-color: yellow;          }
             .box {
-                   width: 90%;
-                    height: 50px;
-                    border: 10px solid red;
-                    background-color: #9393b7;
-                    padding: 10px;
-                    margin: 15px;
-                    /* outline: 2px solid blue; */
-
-            }   
+                
+                width: 90%;
+                height: 50px;
+                border: 10px solid red;
+                background-color: #9393b7;
+                padding: 10px;
+                margin: 10px;
+                outline: 3px solid blue;
+                color: green;
+                }   
         </style>
     </head>
 
     <body>
         <div class="container">
             <div class="box">
-               This is a text box modal div, the width define the--.
-                padding is defined inside of border and margine is defined for outside of border. 
+                the width define the content space.
+                padding is defined space outside content to border,
+                border define space outside padding/content to margin/outline,
+                outline do not create extra space, if defined it just overlap with other. defined outside border, but not increase extra spacing.
+                Margin define space outside border.
+                if total space if larger than parent space, child span outside to parent.
             </div>
-             <div class="box">
-               This is a text box modal div, the width define the--.
-                padding is defined inside of border and margine is defined for outside of border. 
+            <div class="box">
+                the width define the content space.
+                padding is defined space outside content to border,
+                border define space outside padding/content to margin/outline,
+                outline do not create extra space, if defined it just overlap with other. defined outside border, but not increase extra spacing.
+                Margin define space outside border.
+                if total space if larger than parent space, child span outside to parent.
             </div>
         </div>
     </body>
