@@ -7,9 +7,12 @@ String.prototype.mySplite = function mySplite (seperator) {
 			arr.push(str);
 			str = "";
 		}else {
+			,mh,hs
 			str += this[i];
 		}
 	}
 	arr.push(str);
 	return arr;
 }
+
+console.log("aaa");
