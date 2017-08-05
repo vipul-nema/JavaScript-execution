@@ -1,0 +1,166 @@
+<html> 
+    <head>
+        <title> Position and z-index</title>
+        <style>
+            div {
+                width: 95%;
+                border: 2px dotted red;
+                margin: 10px;
+                /* opacity: 0.8; */
+                  /* this crate strange behaviour */
+                
+            }
+            p {
+                margin: 0px;
+            }
+
+            #div1 {
+                background-color: yellow;
+                height: 100px;
+               
+            }
+            #div1 > div {
+                position: relative;
+                left : 10px;
+                top:10px;
+                left: 50%;
+                z-index: 100;
+                height: 80px;
+                width: 3000px;
+                background-color: blue;
+                /* opacity: 0.9; */
+            }
+           
+            #div2 {
+                position: absolute;
+                top : 30px;
+                right : 50px;
+                z-index: 30;
+                background-color:magenta;
+                height: 500px;
+                width: 150px; 
+            }
+
+            #div2 > div {
+                background-color: red;
+                height: 100px;
+                width: 200px;
+
+            }
+
+             #div3 {
+                position: relative;
+                top : -30px;
+                left: 10px;
+                z-index: 20;
+                background-color: yellowgreen;
+                height: 100px;
+                /* opacity: 0.9; */
+            }
+
+             #div3 > div {
+                position: relative;
+                z-index: 300;
+            }
+
+           
+            #div4 {
+                position: fixed;
+                width: 100px;
+                right:150px;
+                top: 10px;
+                background-color: gray;
+                z-index:90;
+                height: 100px;
+            }
+            .div5 {
+                background-color: gainsboro;
+               height: 100px;
+            }
+
+           
+        </style>
+    </head>
+    
+    <body>
+        <div id="div1">
+            Div 1
+            <p>position- static</p>
+            <div> DIV 1_1, 
+                 <p>position- relative</p>
+                <p>z-index- 100</p>
+            </div>
+        </div>
+
+        <div id = "div2">
+            <div>DIV 2_1
+                <p>position- static</p> 
+            </div>
+            Div 2
+            <p>position- absolute</p>
+            <p>z-index - 30</p>
+        </div>
+
+        <div id ="div3">
+            Div 3
+             <p>position- relative</p>
+            <p>z-index - 20</p>
+        </div>
+
+         <div id ="div4">
+            Div 4
+            <p>position- fixed</p>
+           <p>z-index - 90</p>
+        </div>
+        <div class="div5">
+            Div 5
+            <p>position- static</p>
+          
+        </div>
+        <div class="div5">
+           
+            <p>position- static</p>
+          
+        </div>
+        <div class="div5">
+           
+            <p>position- static</p>
+          
+        </div>
+        <div class="div5">
+           
+            <p>position- static</p>
+          
+        </div>
+        <div class="div5">
+           
+            <p>position- static</p>
+          
+        </div>
+        <div class="div5">
+            
+            <p>position- static</p>
+          
+        </div>
+        <div class="div5">
+            
+            <p>position- static</p>
+          
+        </div>
+        <div class="div5">
+            
+            <p>position- static</p>
+          
+        </div>
+        <div class="div5">
+           
+            <p>position- static</p>
+          
+        </div>
+        <div class="div5">
+            
+            <p>position- static</p>
+          
+        </div>
+    </body>
+</html>
