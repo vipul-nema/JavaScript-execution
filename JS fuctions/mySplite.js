@@ -7,17 +7,12 @@ String.prototype.mySplite = function mySplite (seperator) {
 			arr.push(str);
 			str = "";
 		}else {
-			,mh,hs
 			str += this[i];
 		}
 	}
 	arr.push(str);
 	return arr;
 }
-
-<<<<<<< HEAD
-console.log("aaa");
-=======
 
 
 
@@ -38,4 +33,39 @@ function iterate(value, index, array){
 };
 arr.myForEach(iterate);
 
->>>>>>> fce396909813d133ae9e7a88d9948b10584831b9
+
+// <<<<<<<<<<<< Start reduce function 
+function reduce(coll, memo, iteratee, callback) {
+    // to be implemented
+    callback = callback || function (){};
+    coll = coll || [];
+    if(typeof iteratee!=="function"){
+        return;
+    }
+    var index = 0;
+
+    coll.forEach(function(element) {
+            iteratee(memo, element, resolve);
+    }, this);
+    
+    function resolve(err, data){
+        if(err){
+            callback(err);
+        }else{
+            memo = data;
+            index++;
+            if(coll.length == index){
+                callback(null,memo);
+            }
+        }
+    }
+}
+
+reduce( [1,2,3], 0, function(memo, item, callback) {
+    callback(null, memo + item);
+    
+}, function(err, result) {
+    console.log(err, result)
+    // result is now equal to the last value of memo, which is 6
+});
+//************** End of renduce code
